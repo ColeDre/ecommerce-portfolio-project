@@ -19,7 +19,7 @@ const Categories = () => {
       <div className='product__grid'>
         {
           homePageCategories.map(category => {
-            let categoryPaths = ['clothes', 'shoes', 'contact'];
+            let categoryPaths = ['clothes', 'shoes'];
             let catergoryPathLink = '';
 
             if (categoryPaths.includes(category.path)) {
