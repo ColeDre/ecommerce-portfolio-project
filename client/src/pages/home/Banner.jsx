@@ -3,14 +3,12 @@ import { Link } from 'react-router-dom'
 import bannerImg from '../../assets/header.png'
 
 const Banner = () => {
-  // include github <a> in h1
   return (
     <div className='section__container header__container'>
       <div className='header__content'>
         <h4>Stack: MongoDB, Express.js, React, Node.js</h4>
         <h1>DeAndre Coleman Ecommerce Portfolio Project</h1>
-        {/* <p>Stack: MongoDB, Express.js, React, Node.js</p> */}
-        <p>Hey, thanks for visiting! This project is meant to mimic the functionality of an everyday ecommerce shop! Some features may be missing on initial visit. The GitHub repo is in the links and features will be updated often.</p>
+        <p>Hey, thanks for visiting my portfolio website! This project is meant to mimic the functionality of an everyday ecommerce shop. This project is on-going so some features may be missing on your initial visit. The <span className='link'><a href='#github'>GitHub repo</a></span> is linked below and on the <Link to='/contact' className='link'><a>Contact page</a></Link> which includes experience and resume information. Thanks for visting!</p>
         <button className='btn'><Link to='/shop'>Browse Project</Link></button>
       </div>
       <div className='header__image'>
