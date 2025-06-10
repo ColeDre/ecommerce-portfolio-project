@@ -28,7 +28,7 @@ const Categories = () => {
              
             return (
               <Link to={catergoryPathLink ? catergoryPathLink : category.path} key={category.name} className='categories__card'> 
-                <img src={category.image} alt={category.name} />
+                <img src={category.image} alt={category.name} id={category.path}/>
                 <h4>{category.name}</h4>
               </Link>
             )
