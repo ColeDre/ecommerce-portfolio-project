@@ -8,7 +8,7 @@ const Navbar = () => {
         <ul className="nav__links">
           {/* TODO: reformat to map */}
           <li className="link"><Link to="/">Home</Link></li>
-          <li className="link"><Link to="/skills">Skills</Link></li>
+          <li className="link"><Link to="/shop">Shop</Link></li>
           <li className="link"><Link to="/">Pages</Link></li>
           <li className="link"><Link to="/">Resume</Link></li>
           {/* add a component to show experience */}
