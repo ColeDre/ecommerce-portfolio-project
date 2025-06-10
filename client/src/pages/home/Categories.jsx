@@ -24,16 +24,15 @@ const Categories = () => {
 
             if (categoryPaths.includes(category.path)) {
               catergoryPathLink = `/categories/${category.path}`
-            } 
-             {
-              return (
-                <Link to={catergoryPathLink ? catergoryPathLink : category.path} key={category.name} className='categories__card'> 
-                  <img src={category.image} alt={category.name} />
-                  <h4>{category.name}</h4>
-                </Link>
-              )
             }
-
+             
+            return (
+              <Link to={catergoryPathLink ? catergoryPathLink : category.path} key={category.name} className='categories__card'> 
+                <img src={category.image} alt={category.name} />
+                <h4>{category.name}</h4>
+              </Link>
+            )
+            
           })
         }
       </div>
