@@ -1,22 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@400;500;600;700&display=swap");
+
 @import "tailwindcss";
 
 @theme {
-  --color-primary-500: #ed3849,
-  --color-primary-dark: #d23141,
-  --color-primary-light: #f4e5ec,
-  --color-text-dark: #0f172a,
-  --color-text-light: #64748b,
-  --color-extra-light: #f8fafc,
-  --container-screen-2xl: 1400px, 
-  --container-custom-1200: 1200px, 
-  --container-custom-900: 900px, 
+  --color-primary: #3D7B55;
+  --color-primary-dark: #2b563b;
+  --color-logo: #808080;
+  --color-accent: #2E292C;
+  --color-primary-light: #E1E8DF;
+  --color-text-dark: #0f172a;
+  --color-text-primary: #3D7B55;
+  --color-text-light: #64748b;
+  --color-extra-light: #f8fafc;
+  --container-screen-2xl: 1400px; 
+  --container-custom-1200: 1200px; 
+  --container-custom-900: 900px; 
 }
 
 
 :root {
-  --primary-color: #ed3849;
-  --primary-color-dark: #d23141;
-  --primary-color-light: #f4e5ec;
+  --primary-color: #3D7B55;
+  --primary-color-dark: #2b563b;
+  --primary-color-light: #E1E8DF;
+  --primary-color-logo: #858485;
   --text-dark: #0f172a;
   --text-light: #64748b;
   --extra-light: #f8fafc;
@@ -36,7 +42,7 @@
 .section__container {
   max-width: var(--max-width-1400);
   margin: auto;
-  padding: 5rem 1rem;
+  padding: 5rem .1rem;
 }
 
 .section__header {
@@ -111,14 +117,14 @@ nav {
 }
 
 .nav__logo a {
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: 800;
   font-family: var(--header-font);
   color: var(--text-dark);
 }
 
 .nav__logo a span {
-  color: var(--primary-color);
+  color: var(--primary-color-logo);
 }
 
 .nav__icons {
@@ -161,7 +167,7 @@ nav {
 }
 
 .header__content h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 800;
   font-family: var(--header-font);
   color: var(--text-dark);
@@ -180,9 +186,11 @@ nav {
 .header__image img {
   position: absolute;
   left: 50%;
-  bottom: -5rem;
+  /* max-height: 50rem; */
+  /* top: 5rem; */
+  /* bottom: -10rem; */
   transform: translateX(-50%);
-  max-width: 500px;
+  max-width: 400px;
 }
 
 .categories__grid {
@@ -519,6 +527,10 @@ nav {
 
   .hero__container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section__container {
+    padding-bottom: 12rem;
   }
 
   .product__grid {
