@@ -23,6 +23,7 @@
   --primary-color-dark: #2b563b;
   --primary-color-light: #E1E8DF;
   --primary-color-logo: #858485;
+  --primary-color-error: #C2AAA7;
   --text-dark: #0f172a;
   --text-light: #64748b;
   --extra-light: #f8fafc;
@@ -143,6 +144,38 @@ nav {
 .nav__icons span a:hover {
   color: var(--primary-color);
 }
+
+.error__container {
+  min-height: 650px;
+  background-color: var(--primary-color-error);
+  max-width: var(--max-width-1400);
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.error__container p {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  
+}
+
+.error__image {
+  max-height: 30rem;
+  padding-bottom: 2rem;
+}
+
+.error__btn {
+  padding: 0.75rem 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--primary-color-light);
+  background-color: var(--primary-color-dark);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 
 .header__container {
   min-height: 650px;
