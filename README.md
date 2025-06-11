@@ -6,13 +6,15 @@
 <h2 align="center"><u>Project goals and a little background</u></h2>
 <p align="center">
 
- - This project is intended to showcase ability and experience while also being mindful of dedicated time. For that reason I have decided to make this a **live project**. Meaning, while not the final and most polished version at the onset, the goal is to allow prospective: clients, employers and/or hiring teams to see proof of concepts and abilities.
+ - Hey :wave:! Thanks for checking out my portfolio project. I am a Full-Stack developer with over 5+ years of professional experience building web and mobile applications.
+   
+ - This project is intended to showcase ability and experience while also being mindful of dedicated time. For that reason I have decided to make this a **live project**. Meaning, while not the final and most polished version at the onset, the goal is to allow prospective: clients, employers, and/or hiring teams to see proof of "know-how" and abilities.
  
- - Testing will be initially limited to user testing for sake of brevity and having something to show and something that users can interact with. *Wrestled with the idea of implementing tests but the lift of adding would dramatically expand time and intended scope for a portfolio project* 
+ - Testing will be initially limited to user testing for sake of brevity and the foremost goal of having something to show and something that users can interact with. *I wrestled with the idea of implementing tests but the lift of adding would dramatically expand time and intended scope for this portfolio project* 
 
  - **This is an on-going project**, meaning features will be implemented continuously. The version seen today is supposed to be iterated upon. 
 
- - Clean/maintainable code is the priority rather than elegance, succinctness.
+ - Clean/maintainable code is the priority rather than elegance, and succinctness. The code aims for a balance of readability and sleekness. 
  
  - This project is intended to be a showcase of experience **and not** a production-grade web application. 	**At no point will any data used be treated as real-world data** 
 
