@@ -236,7 +236,7 @@ nav {
 .hero__content {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 55%;
   transform: translate(-15%, -50%);
 }
 
@@ -247,7 +247,7 @@ nav {
 }
 
 .hero__content h4 {
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
   font-size: 1.25rem;
   font-weight: 800;
   font-family: var(--header-font);
@@ -260,7 +260,11 @@ nav {
 }
 
 .hero__card img {
-  border-radius: 5px;
+  border-radius: 15px;
+}
+
+#hero-card {
+  padding-top: .5rem;
 }
 
 .product__grid {
