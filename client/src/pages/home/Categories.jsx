@@ -23,11 +23,13 @@ const Categories = () => {
     <>
       <div className='product__grid'>
         {homePageCategories.map((category) => {
-          if (categoryPaths.includes(category.path)) {
-            
+          let isContactPath = category.path === 'contact'
+          
+          if (categoryPaths.includes(category.path) || isContactPath) {
+        
             return (
               <Link
-                to={`/categories/${category.path}`}
+                to={isContactPath ? `/${category.path}` : `/categories/${category.path}`}
                 key={category.name}
                 className='categories__card'
               >
