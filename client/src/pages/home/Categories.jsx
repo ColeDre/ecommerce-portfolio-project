@@ -1,19 +1,19 @@
 import React from 'react'
 
 import clothesCategoryImg from '../../assets/categories/clothes-icon.jpg'
-import shoesCategoryImg from '../../assets/categories/shoes-icon.jpg'
+import accessoriesCategoryImg from '../../assets/categories/accessories-icon.jpg'
 import contactCategoryImg from '../../assets/categories/contact-icon.png'
 import githubCategoryImg from '../../assets/categories/github-icon.png'
 import { Link } from 'react-router-dom'
 
-const Categories = () => {
-  const homePageCategories = [
-    {name: 'Clothes', path: 'clothes', image: clothesCategoryImg},
-    {name: 'Shoes', path: 'shoes', image: shoesCategoryImg},
-    {name: 'Resume', path: 'contact', image: contactCategoryImg},
-    {name: 'GitHub', path: 'github', image: githubCategoryImg},
-  ]
+const homePageCategories = [
+  {name: 'Clothes', path: 'clothes', image: clothesCategoryImg},
+  {name: 'Accessories', path: 'accessories', image: accessoriesCategoryImg},
+  {name: 'Resume', path: 'contact', image: contactCategoryImg},
+  {name: 'GitHub', path: 'github', image: githubCategoryImg},
+]
 
+const Categories = () => {
   return (
     <>
       <div className='product__grid'>
