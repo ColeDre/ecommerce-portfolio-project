@@ -303,7 +303,7 @@ nav {
 .product__container {
   max-width: var(--max-width-1400);
   margin: auto;
-  padding: 2rem 1rem;
+  padding: .1rem 1rem 2.5rem;
 }
 
 
