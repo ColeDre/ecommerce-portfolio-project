@@ -329,18 +329,18 @@ nav {
 .product__card__content h4 {
   margin-bottom: 5px;
   font-size: .9rem;
-  font-weight: 600;
+  font-weight: 700;
   font-family: var(--header-font);
 }
 
 .product__card__content p {
-  font-weight: 500;
+  font-weight: 600;
   color: var(--text-dark);
 }
 
 .product__card__content p s {
   font-size: 0.8rem;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--text-light);
 }
 
