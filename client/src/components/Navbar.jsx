@@ -29,7 +29,12 @@ const Navbar = () => {
             <button className="hover:text-primary">
               <i className="ri-shopping-bag-4-line"></i>
               {/* want this alert to not display if cart is empty | TODO: padding not being applied to <sup> */}
-              <sup className="text-sm inline-block px-1.5 text-white bg-accent rounded-full text-center">0</sup>
+              <sup 
+                className="text-sm inline-block text-white bg-accent rounded-full text-center"
+                style={{padding:'0 .2rem'}}
+              >
+                0
+              </sup>
             </button>
           </span>
           <span>
