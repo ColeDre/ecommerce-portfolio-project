@@ -10,13 +10,15 @@ const TrendingProducts = () => {
   }
 
   return (
-    <section className='section__container product__container'>
+    <section className='product__container'>
       <h2 className='section__header'>Trending Products</h2>
       <p className='section__subheader'>
         Lorem ipsum dolor,  Consequatur, aliquid eaque ipsam magni eum architecto corporis!
       </p>
       
-      <ProductCards products={products} />
+      <div style={{marginTop: '1.5rem'}}>
+        <ProductCards products={products} />
+      </div>
     </section>
   )
 }
