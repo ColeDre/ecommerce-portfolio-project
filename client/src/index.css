@@ -589,6 +589,14 @@ nav {
     gap: 1rem;
   }
 
+  .product__card__content h4 {
+    font-size: 1.1rem;
+  }
+
+  .product__card__content p > s {
+    font-size: .9rem;
+  }
+
   .deals__container {
     grid-template-columns: repeat(1, 1fr);
   }
