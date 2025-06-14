@@ -21,7 +21,11 @@ const DealSection = ({ dealEndsDate, dealActive }) => {
         <h4 className='capitalize'>Browse Our latest deals</h4>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam iste similique mollitia rerum molestias accusamus perspiciatis adipisci voluptas earum, animi dolores corrupti dolorum, Check them out before they're gone!</p>
 
-        <DealCountdown endDate={dealEndsDate}/>
+        {
+          // TODO: setting dealActive to false resizes dealImgSummer 
+          dealActive && 
+          <DealCountdown endDate={dealEndsDate}/>
+        }
       </div>
     </section>
   )
