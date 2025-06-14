@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import DealCountdown from './DealCountdown'
 import dealImgSummer from '../../assets/deals/deals-4.png'
-// import dealImgFall from '../../assets/deals/deals-3.png'
+import { getDealEndDate, isDealActive } from '../../utils/dealSectionUtils'
 
 
 
-const DealSection = ({ dealEndsDate, dealActive }) => {
+const DealSection = () => {
+  // TODO: These both are going to need backend validations
+  // TODO: setting to false messes with the styling of the dealImg 
+  const [dealActive, setDealActive] = useState(isDealActive())
+  const dealEndDate = getDealEndDate()
   
   // const dealCountDown;
-  let dealTagline = `The heat isn't the only thing that's up, get Up to 50% off!`
+  let dealTagline = `The heat isn't the only thing that's up, get Up to 50% off until ${dealEndDate.getMonth()+1}/${dealEndDate.getDate()}! `
+
+  useEffect(() => {
+    setDealActive(isDealActive())
+  }, [])
 
   return (
     <section className='section__container deals__container'>
@@ -24,7 +32,7 @@ const DealSection = ({ dealEndsDate, dealActive }) => {
         {
           // TODO: setting dealActive to false resizes dealImgSummer 
           dealActive && 
-          <DealCountdown endDate={dealEndsDate}/>
+          <DealCountdown endDate={dealEndDate}/>
         }
       </div>
     </section>
