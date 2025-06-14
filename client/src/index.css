@@ -584,6 +584,16 @@ nav {
     padding-bottom: 3rem;
   }
 
+  .section__container.deals__container {
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+  }
+  
+  .section__container.banner__container {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
+
   .product__grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
