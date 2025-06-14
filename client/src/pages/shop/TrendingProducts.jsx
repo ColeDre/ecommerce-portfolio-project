@@ -17,7 +17,15 @@ const TrendingProducts = () => {
       </p>
       
       <div style={{marginTop: '1.5rem'}}>
-        <ProductCards products={products} />
+        <ProductCards products={products.slice(0, visibleProducts)} />
+      </div>
+
+      <div className='product__btn'>
+        {
+          visibleProducts < products.length && (
+            <button className='btn' onClick={loadMoreProducts}>Show More</button>
+          )
+        }
       </div>
     </section>
   )
