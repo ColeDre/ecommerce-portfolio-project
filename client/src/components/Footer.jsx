@@ -15,15 +15,31 @@ const Footer = () => {
           <h4 className='uppercase'>Contact info </h4>
           <p>
             <span><i className="ri-earth-fill" /></span>
-            Washington DC Area 
+            <a 
+              style={{display: 'inline'}} 
+              href='https://maps.app.goo.gl/dh7zjuSrUeNbxdRw6'
+              target='_blank'
+            >
+              Washington DC Area
+            </a> 
           </p>
           <p>
             <span><i className="ri-mail-open-fill"/></span>
-            contact@dcoleman1100.dev
+            <a 
+              style={{display: 'inline'}} 
+              href='mailto:dcoleman1100@yahoo.com?subject=Inquiry'
+            >
+              contact@dcoleman1100.dev
+            </a>
           </p>
           <p>
             <span><i className="ri-phone-fill"/></span>
-            Email if needed
+            <a 
+              style={{display: 'inline'}} 
+              href='mailto:dcoleman1100@yahoo.com?subject=Phone Number Inquiry'
+            >
+              Email if needed
+            </a>
           </p>
         </div>
 
