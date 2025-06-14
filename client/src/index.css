@@ -46,6 +46,15 @@
   padding: 5rem 1rem;
 }
 
+.section__container.banner__container {
+  padding-bottom: 4rem;
+}
+
+.section__container.blog__container {
+  padding-top: 2rem;
+  /* padding-bottom: 3rem; */
+}
+
 .section__header {
   margin-bottom: 1rem;
   font-size: 2rem;
@@ -58,6 +67,7 @@
 .section__subheader {
   max-width: 500px;
   margin: auto;
+  margin-bottom: 1.5rem;
   color: var(--text-light);
   text-align: center;
 }
@@ -591,7 +601,12 @@ nav {
   
   .section__container.banner__container {
     padding-top: 3rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
+  }
+
+  .section__container.blog__container {
+    padding-top: 0;
+    padding-bottom: 3rem;
   }
 
   .product__grid {
