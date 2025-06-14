@@ -55,6 +55,10 @@
   padding-bottom: 3.5rem;
 }
 
+.section__container.footer__container {
+  padding-bottom: 3rem;
+}
+
 .section__header {
   margin-bottom: 1rem;
   font-size: 2rem;
@@ -605,8 +609,13 @@ nav {
   }
 
   .section__container.blog__container {
-    padding-top: 0;
+    padding-top: 1.5rem;
     padding-bottom: 3rem;
+  }
+  
+  .section__container.footer__container {
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
   }
 
   .product__grid {
