@@ -32,7 +32,7 @@ export const totalRemainingDealDays = (endDate) => {
   if (endDate.getFullYear() % 4 === 0) daysInMonths[2] = 29;
   
   if ( countMonths !== 0 && countMonths === true ) {
-    console.log( 'count', countMonths)
+
     for (let i=0; i < countMonths; i++) {
       let followingMonth = CURRENT_DATE.getMonth() + 1;
       
@@ -41,10 +41,13 @@ export const totalRemainingDealDays = (endDate) => {
       } else {
         monthsRemaining.push(daysInMonths[followingMonth + i])
       }; 
+      
     }
-    console.log(monthsRemaining)
+
     totalRemainingDays = monthsRemaining.reduce((totalDays, monthDays) => {
+
       return totalDays + monthDays
+    
     }) + endDate.getDate() - 1
     
     totalRemainingDays = totalRemainingDays - CURRENT_DATE.getDate() - 1;
