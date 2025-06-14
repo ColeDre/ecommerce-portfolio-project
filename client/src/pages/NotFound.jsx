@@ -1,7 +1,14 @@
-import React from "react";
+import React, {useEffect} from "react";
 import errorImg from '../assets/error.svg'
 
 const NotFound = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, });
+  };
+
+  useEffect(() => {
+    scrollToTop()
+  }, []);
 
   return (
     <div className='error__container'>
