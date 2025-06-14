@@ -3,12 +3,8 @@ import React, { useState, useEffect }  from "react";
 import { totalRemainingDealDays, initialCountdownDate } from "../../utils/dealSectionUtils";
 
 const DealCountdown = ({ endDate }) => {
-  
-  
   const countdownDate = initialCountdownDate(endDate)
-
   const [dealCountdown, setDealCountdown] = useState(countdownDate)
-  
   
   useEffect(() => {
     const countdownId = setInterval(() => {
