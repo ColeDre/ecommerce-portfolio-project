@@ -591,6 +591,7 @@ nav {
   
   .section__container.banner__container {
     padding-top: 3rem;
+    padding-bottom: 5rem;
   }
 
   .product__grid {
