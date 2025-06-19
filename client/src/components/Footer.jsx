@@ -20,7 +20,7 @@ const Footer = () => {
               href='https://maps.app.goo.gl/dh7zjuSrUeNbxdRw6'
               target='_blank'
             >
-              Washington DC Area
+              Washington, D.C. Area
             </a> 
           </p>
           <p>
