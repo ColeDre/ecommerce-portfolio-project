@@ -17,7 +17,7 @@ export const getDealEndDate = () => {
     day: dealEndsDay, 
     hour: 0
   }
-  // console.log(dealEnds.month)
+
   const dealEndsDate = new Date(dealEnds.year, dealEnds.month, dealEnds.day, dealEnds.hour);
 
   return dealEndsDate;
