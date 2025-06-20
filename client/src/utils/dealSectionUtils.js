@@ -3,8 +3,10 @@ const CURRENT_DATE = new Date();
 // TODO: this needs to be set from backend
 export const getDealEndDate = () => {
   const date = new Date();
-  let dealEndsDay = date.getDate() <= 20 ? 20 : 4;
-  
+  let dealEndsDay = date.getDate() <= 19 ? 20 : 4;
+  let addMonth = dealEndsDay === 20 ? 0 : 1;
+  console.log(addMonth)
+
   // wontfix: setFullYear breaks dealCountDown when set past a year, Deals probably shouldn't be spanning multiple years at a time | USE TO TEST MONTHS | if 
   // date.setFullYear(2026)
   // date.setMonth(8) 
@@ -12,11 +14,11 @@ export const getDealEndDate = () => {
   // TODO: this may cause issues with locality, for scope of project won't worry but in broader picture something to keep in mind | also we would want to get this dealEnd Data from backend
   let dealEnds = {
     year: date.getFullYear(), 
-    month: date.getMonth(), 
+    month: date.getMonth() + addMonth, 
     day: dealEndsDay, 
     hour: 0
   }
-
+  // console.log(dealEnds.month)
   const dealEndsDate = new Date(dealEnds.year, dealEnds.month, dealEnds.day, dealEnds.hour);
 
   return dealEndsDate;
