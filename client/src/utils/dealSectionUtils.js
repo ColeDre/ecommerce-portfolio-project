@@ -3,7 +3,7 @@ const CURRENT_DATE = new Date();
 // TODO: this needs to be set from backend
 export const getDealEndDate = () => {
   const date = new Date();
-  let dealEndsDay = date.getDate() <= 20 ? 20 : 4;
+  let dealEndsDay = date.getDate() < 20 ? 20 : 4;
   let addMonth = dealEndsDay === 20 ? 0 : 1;
 
   // wontfix: setFullYear breaks dealCountDown when set past a year, Deals probably shouldn't be spanning multiple years at a time | USE TO TEST MONTHS | if 
