@@ -5,7 +5,6 @@ export const getDealEndDate = () => {
   const date = new Date();
   let dealEndsDay = date.getDate() <= 19 ? 20 : 4;
   let addMonth = dealEndsDay === 20 ? 0 : 1;
-  console.log(addMonth)
 
   // wontfix: setFullYear breaks dealCountDown when set past a year, Deals probably shouldn't be spanning multiple years at a time | USE TO TEST MONTHS | if 
   // date.setFullYear(2026)
