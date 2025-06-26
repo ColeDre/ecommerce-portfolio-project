@@ -40,6 +40,17 @@
   box-sizing: border-box;
 }
 
+.category__section__container {
+  max-width: var(--max-width-1400);
+  margin: auto;
+  padding: 2.5rem 1rem;
+}
+
+.category__section__container + .section__container {
+  margin-top: -.5rem;
+  padding-bottom: 3rem;
+}
+
 .section__container {
   max-width: var(--max-width-1400);
   margin: auto;
@@ -588,6 +599,16 @@ nav {
 
   .hero__container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .category__section__container {
+    max-width: var(--max-width-1400);
+    margin: auto;
+    padding: 2rem 1rem;
+  }
+
+  .category__section__container + .section__container {
+    margin-top: -2.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .section__container {
