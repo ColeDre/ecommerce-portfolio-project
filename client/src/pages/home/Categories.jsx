@@ -7,8 +7,16 @@ import githubCategoryImg from "../../assets/categories/github-icon.png";
 import { Link } from "react-router-dom";
 
 const homePageCategories = [
-  { name: "Clothes", path: "clothes", image: clothesCategoryImg },
-  { name: "Accessories", path: "accessories", image: accessoriesCategoryImg },
+  {
+    name: "Clothes",
+    path: "clothes",
+    image: clothesCategoryImg,
+  },
+  {
+    name: "Accessories",
+    path: "accessories",
+    image: accessoriesCategoryImg,
+  },
   { name: "Resume", path: "contact", image: contactCategoryImg },
   {
     name: "GitHub",
@@ -23,13 +31,16 @@ const Categories = () => {
     <>
       <div className='product__grid'>
         {homePageCategories.map((category) => {
-          let isContactPath = category.path === 'contact'
-          
+          let isContactPath = category.path === "contact";
+
           if (categoryPaths.includes(category.path) || isContactPath) {
-        
             return (
               <Link
-                to={isContactPath ? `/${category.path}` : `/categories/${category.path}`}
+                to={
+                  isContactPath
+                    ? `/${category.path}`
+                    : `/categories/${category.path}`
+                }
                 key={category.name}
                 className='categories__card'
               >
@@ -41,9 +52,7 @@ const Categories = () => {
                 <h4>{category.name}</h4>
               </Link>
             );
-
           } else {
-
             return (
               <a
                 href={category.path}
@@ -59,7 +68,6 @@ const Categories = () => {
                 <h4>{category.name}</h4>
               </a>
             );
-            
           }
         })}
       </div>
