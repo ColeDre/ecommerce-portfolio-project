@@ -620,6 +620,7 @@ nav {
   .hero__container {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .category__section__container {
     max-width: var(--max-width-1400);
     margin: auto;
@@ -630,6 +631,13 @@ nav {
     margin-top: -2.5rem;
     padding-bottom: 1.5rem;
   }
+  
+  .search__section__container {
+    max-width: var(--max-width-1400);
+    margin: auto;
+    padding: 2rem 1rem;
+  }
+
 
   .section__container {
     padding-bottom: 12rem;
