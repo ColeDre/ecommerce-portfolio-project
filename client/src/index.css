@@ -34,11 +34,11 @@
   --header-font: "Playfair Display", serif;
 }
 
-* {
+/* * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
+} */
 
 .category__section__container {
   max-width: var(--max-width-1400);
@@ -50,6 +50,21 @@
   margin-top: -.5rem;
   padding-bottom: 3rem;
 }
+
+.search__section__container {
+  max-width: var(--max-width-1400);
+  margin: auto;
+  padding: 2.5rem 1rem;
+}
+
+.search__section__container + .section__container {
+  margin-top: -.5rem;
+  padding-bottom: 3rem;
+}
+
+/* .search__bar {
+  
+} */
 
 .section__container {
   max-width: var(--max-width-1400);
@@ -85,6 +100,11 @@
   margin-bottom: 1.5rem;
   color: var(--text-light);
   text-align: center;
+}
+
+.search-bar {
+  border-color: #E1E8DF;
+  height: ;
 }
 
 .btn {
